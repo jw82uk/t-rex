@@ -5,7 +5,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jw82uk/T-Rex.git"
+    "url": "https://github.com/jw82uk/t-rex.git"
   },
   "description": "Interactive site with modern CSS and bundled JS",
   "source": "src/index.html",

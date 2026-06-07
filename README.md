@@ -1,11 +1,8 @@
 # Anatomy of a T-Rex
 
-This is an interactive, educational timeline designed to showcase and explain 10 significant milestones in human evolution.
+This is an interactive, educational...
 
-- **Visual storytelling:** Designed to show, not just tell, the 'story' of our evolution.
-- **Engaging:** Features friendly, comprehensible copy paired with interesting imagery and a modern design.
-- **Easy to use:** Intuitive navigation regardless of your device or screen size.
-- **Accessible to all:** Complex topics explained simply, intended to be enjoyed by a wide and varied audience.
+- **Something:** Something something...
 
 🔗 **[View Live Demo](https://jw82uk.github.io/t-rex/)**
 
@@ -14,7 +11,6 @@ This is an interactive, educational timeline designed to showcase and explain 10
 ## 🚀 Technical Features
 
 - **Modern Bundling:** Powered by [Parcel](https://parceljs.org/) for lightning-fast builds.
-- **Dynamic Sliders:** Uses [Swiper](https://swiperjs.com/) for interactive content navigation.
 - **Sass Integration:** Advanced styling with SCSS support.
 - **Code Quality:** Pre-configured with ESLint and Stylelint to maintain high standards.
 - **Responsive:** Optimized for a wide range of devices using `browserslist`.
