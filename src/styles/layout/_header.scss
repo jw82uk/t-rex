@@ -1,1 +1,18 @@
 @use '../abstracts/index' as *;
+
+.header {
+  padding-bottom: space(32);
+  padding-top: space(32);
+}
+
+.header__group {
+  max-width: 30rem;
+}
+
+.header__heading {
+  line-height: 1.2;
+}
+
+.header__text {
+  max-width: 40rem;
+}

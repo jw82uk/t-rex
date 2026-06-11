@@ -1,26 +1,13 @@
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
-    <!-- Google tag (gtag.js) 
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-521NXN0WYT"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-521NXN0WYT');
-    </script>
-    -->
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What Made T-Rex the Ultimate Predator? | Anatomy of a T-Rex</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Discover the anatomy of Tina the T-Rex and learn what made the Tyrannosaurus Rex the ultimate apex predator of the Cretaceous period."
+    />
 
     <link
       rel="preload"
@@ -35,26 +22,107 @@
 
   <body>
     <header class="header" id="top">
-      <h1>What Made T-Rex the Ultimate Predator?</h1>
-
-      <p>Anatomy of a T-Rex</p>
+      <div class="container">
+        <hgroup class="header__group">
+          <p class="header__subtitle">
+            Anatomy of a
+            <span class="u-highlight">T-Rex</span>
+          </p>
+          <h1 class="header__heading">
+            What Made T-Rex the Ultimate Predator?
+          </h1>
+        </hgroup>
+        <p class="header__text">
+          Tyrannosaurus Rex was the dominant apex predator of the late
+          Cretaceous period between 90-65 million years ago. But why?
+        </p>
+      </div>
     </header>
 
-    <main class="main-content" id="main-content">
-      <div class="tab-container first-set">
-        <div role="tablist" aria-label="Project Sections">
-          <button role="tab" aria-selected="true" tabindex="0">Overview</button>
-          <button role="tab" aria-selected="false" tabindex="-1">
-            Specifications
-          </button>
+    <main class="main-content">
+      <!-- Mission -->
+      <section class="section section--mission">
+        <div class="container">
+          <div class="mission">
+            <div class="mission__image-wrapper"></div>
+            <div class="mission__content">
+              <h2 class="mission__heading">Your Mission</h2>
+
+              <p class="mission__text">
+                Welcome! Your mission, if you choose to accept it, is to explore
+                Tina the T-Rex below to discover just what made her such a
+                formidable hunter. Then take the super fun quiz (coming soon) to
+                show us how brainy you are!
+              </p>
+            </div>
+          </div>
         </div>
-        <div role="tabpanel">Panel 1</div>
-        <div role="tabpanel" hidden>Panel 2</div>
-      </div>
+      </section>
+
+      <!-- T-Rex embed -->
+      <section class="section section--trex">
+        <div class="container">
+          <div class="spline-wrapper">
+            <spline-viewer
+              aria-label="Animated 3D model of Tina the T-Rex"
+              loading-anim-type="none"
+              url="https://prod.spline.design/BfHjG0Lkw6t9e5N8/scene.splinecode"
+            ></spline-viewer>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tabs -->
+      <section class="section section--tabs">
+        <div class="container">
+          <div class="tabs">
+            <div
+              class="tabs__tablist"
+              role="tablist"
+              aria-label="T-Rex anatomy"
+            >
+              <button
+                class="tabs__button"
+                role="tab"
+                aria-selected="true"
+                tabindex="0"
+              >
+                Tab label 1
+              </button>
+              <button
+                class="tabs__button"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Tab label 2
+              </button>
+              <button
+                class="tabs__button"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Tab label 3
+              </button>
+            </div>
+            <div class="tabs__panel" role="tabpanel">Tab panel 1</div>
+            <div class="tabs__panel" role="tabpanel" hidden>Tab panel 2</div>
+            <div class="tabs__panel" role="tabpanel" hidden>Tab panel 3</div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer"></footer>
 
     <script type="module" src="js/main.js"></script>
+
+    <!-- Spline viewer-->
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.12.97/build/spline-viewer.js"
+      async
+    ></script>
   </body>
 </html>

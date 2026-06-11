@@ -6,10 +6,14 @@
 
 .container {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 70rem;
   padding: 0 25px;
 }
 
 strong {
   font-weight: 700;
+}
+
+.u-highlight {
+  color: var(--accent-primary);
 }

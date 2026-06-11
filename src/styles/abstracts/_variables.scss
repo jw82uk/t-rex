@@ -11,22 +11,24 @@ $breakpoints: (
 );
 
 // The brand palette
+$clr-pale-grey: #f5f5f5;
+$clr-mid-grey: #d9d9d9;
+$clr-eerie-black: #1b1b1b;
+$clr-white: #fff;
+$clr-barcelona-orange: #ff9500;
+
+// Remove
 $clr-deep-navy: #0e1127;
 $clr-cyan-neon: #43f9ff;
 $clr-magenta: #f3e;
-$clr-white: #fff;
-$clr-intergalactic-highway: #233789;
-$clr-garden-medley: #29a779;
 
 // The theme tokens (these create the CSS custom variables)
 $theme-tokens: (
-  bg-color: $clr-deep-navy,
-  accent-primary: $clr-cyan-neon,
-  accent-secondary: $clr-magenta,
-  text-color: $clr-white,
-  text-color-inverse: $clr-deep-navy,
-  sky-blue-light: $clr-intergalactic-highway,
-  sky-green: $clr-garden-medley,
+  bg-color: $clr-pale-grey,
+  accent-primary: $clr-barcelona-orange,
+  accent-secondary: $clr-mid-grey,
+  text-color: $clr-eerie-black,
+  text-color-inverse: $clr-white,
 );
 
 /*

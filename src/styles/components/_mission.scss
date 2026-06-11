@@ -1,0 +1,9 @@
+@use '../abstracts/index' as *;
+
+.mission {
+  background-color: $clr-white;
+  border: 3px solid var(--accent-secondary);
+  border-radius: 10px;
+  max-width: 40rem;
+  padding: space(28);
+}
