@@ -1,8 +1,8 @@
 @use '../abstracts/index' as *;
 
 .header {
-  padding-bottom: space(32);
-  padding-top: space(32);
+  padding-bottom: space(48);
+  padding-top: space(48);
 }
 
 .header__group {
@@ -10,9 +10,20 @@
 }
 
 .header__heading {
+  font-size: 3rem;
   line-height: 1.2;
+  margin-bottom: space(16);
+}
+
+.header__subtitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: space(4);
+  text-transform: uppercase;
 }
 
 .header__text {
+  font-size: 1.2rem;
+  font-weight: 700;
   max-width: 40rem;
 }

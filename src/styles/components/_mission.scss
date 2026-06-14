@@ -4,6 +4,18 @@
   background-color: $clr-white;
   border: 3px solid var(--accent-secondary);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: space(16);
   max-width: 40rem;
   padding: space(28);
+
+  @include mq('sm') {
+    flex-direction: row;
+    gap: space(28);
+  }
+}
+
+.mission__image {
+  max-width: none;
 }

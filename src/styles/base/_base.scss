@@ -12,6 +12,16 @@ body {
 }
 
 a {
+  color: var(--accent-primary);
   font-weight: 700;
   text-underline-offset: 2px;
+}
+
+ul {
+  // list-style: none;
+  margin-left: space(48);
+}
+
+li {
+  margin-bottom: space(8);
 }

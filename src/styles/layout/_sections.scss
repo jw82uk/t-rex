@@ -1,0 +1,21 @@
+@use '../abstracts/index' as *;
+
+.section {
+  position: relative;
+}
+
+// T-Rex
+.section--trex {
+  z-index: 1;
+}
+
+// Tabs
+.section--tabs {
+  &:before {
+    background-color: $clr-white;
+    content: '';
+    display: block;
+    inset: space(n40) 0 0 0;
+    position: absolute;
+  }
+}

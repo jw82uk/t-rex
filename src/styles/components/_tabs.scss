@@ -1,0 +1,74 @@
+@use '../abstracts/index' as *;
+
+.tabs {
+  padding: space(40) 0;
+}
+
+.tabs__tablist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: space(20);
+  justify-content: center;
+  margin-bottom: space(40);
+}
+
+.tabs__button {
+  align-items: center;
+  background-color: $clr-white;
+  border: 1px solid var(--accent-secondary);
+  border-radius: 2rem;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 700;
+  gap: space(20);
+  padding: space(12) space(20) space(12) space(24);
+  text-transform: uppercase;
+
+  // Check icon container
+  &::after {
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: 1px solid var(--accent-secondary);
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: space(24);
+  }
+
+  // Button has visited class
+  &.is-visited {
+    // Check icon
+    &::after {
+      background-color: var(--accent-primary);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ffffff' stroke-linecap='square' stroke-width='3' d='m4.167 10 4.166 4.167 8.334-8.334'/%3E%3C/svg%3E");
+      border-color: var(--accent-primary);
+    }
+  }
+
+  // Selected tab
+  &[aria-selected='true'] {
+    background-color: var(--accent-primary);
+    border: none;
+    color: var(--text-color-inverse);
+
+    // Check icon
+    &::after {
+      background-color: $clr-white;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23ff9500' stroke-linecap='square' stroke-width='3' d='m4.167 10 4.166 4.167 8.334-8.334'/%3E%3C/svg%3E");
+      border-color: $clr-white;
+    }
+  }
+}
+
+.tabs__panel {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.tabs__heading {
+  font-size: 2rem;
+  margin-bottom: space(20);
+}

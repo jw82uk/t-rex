@@ -8,6 +8,7 @@
   margin: 0 auto;
   max-width: 70rem;
   padding: 0 25px;
+  position: relative;
 }
 
 strong {
@@ -16,4 +17,8 @@ strong {
 
 .u-highlight {
   color: var(--accent-primary);
+}
+
+.u-img-inline {
+  display: inline;
 }

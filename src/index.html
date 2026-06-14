@@ -44,15 +44,25 @@
       <section class="section section--mission">
         <div class="container">
           <div class="mission">
-            <div class="mission__image-wrapper"></div>
+            <div class="mission__image-wrapper">
+              <img
+                alt="Female detective emoji"
+                class="mission__image"
+                height="51"
+                src="assets/images/theme/icon-detective.png"
+                width="45"
+              />
+            </div>
             <div class="mission__content">
               <h2 class="mission__heading">Your Mission</h2>
 
               <p class="mission__text">
                 Welcome! Your mission, if you choose to accept it, is to explore
-                Tina the T-Rex below to discover just what made her such a
-                formidable hunter. Then take the super fun quiz (coming soon) to
-                show us how brainy you are!
+                <strong>Tina the T-Rex</strong> below to discover just what made
+                her such a formidable hunter.
+              </p>
+              <p class="mission__text">
+                Then, take the <a href="">super fun quiz (coming soon) </a>
               </p>
             </div>
           </div>
@@ -63,10 +73,13 @@
       <section class="section section--trex">
         <div class="container">
           <div class="spline-wrapper">
+            <script
+              type="module"
+              src="https://unpkg.com/@splinetool/viewer@1.12.97/build/spline-viewer.js"
+            ></script>
             <spline-viewer
-              aria-label="Animated 3D model of Tina the T-Rex"
-              loading-anim-type="none"
-              url="https://prod.spline.design/BfHjG0Lkw6t9e5N8/scene.splinecode"
+              loading-anim-type="spinner-small-light"
+              url="https://prod.spline.design/Qc3WXaa7im3Xs1qW/scene.splinecode"
             ></spline-viewer>
           </div>
         </div>
@@ -75,6 +88,7 @@
       <!-- Tabs -->
       <section class="section section--tabs">
         <div class="container">
+          <h2 class="visually-hidden">T-Rex anatomy</h2>
           <div class="tabs">
             <div
               class="tabs__tablist"
@@ -82,12 +96,12 @@
               aria-label="T-Rex anatomy"
             >
               <button
-                class="tabs__button"
+                class="tabs__button is-visited"
                 role="tab"
                 aria-selected="true"
                 tabindex="0"
               >
-                Tab label 1
+                Jaws
               </button>
               <button
                 class="tabs__button"
@@ -95,7 +109,7 @@
                 aria-selected="false"
                 tabindex="-1"
               >
-                Tab label 2
+                Eyes and nose
               </button>
               <button
                 class="tabs__button"
@@ -103,12 +117,89 @@
                 aria-selected="false"
                 tabindex="-1"
               >
-                Tab label 3
+                Legs
+              </button>
+              <button
+                class="tabs__button"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Tail
+              </button>
+              <button
+                class="tabs__button"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Arms
               </button>
             </div>
-            <div class="tabs__panel" role="tabpanel">Tab panel 1</div>
+            <div class="tabs__panel" role="tabpanel">
+              <h3 class="tabs__heading">Unmatched Bone-Crushing Bite Force</h3>
+              <p class="tabs__text">
+                While earlier predators sliced flesh, T. rex evolved to crush
+                entirely through bone, boasting an estimated
+                <strong>bite force of up to 12,800 pounds</strong> per square
+                inch. That's a lot of force, enough force to crush a car!
+              </p>
+              <p class="tabs__text">
+                Think of it this way. It's the equivalent of 4 of our biggest,
+                strongest living crocodiles, or over 100 angry Chihuahuas!
+              </p>
+              <ul class="tabs__list">
+                <li class="tabs__item">
+                  <img
+                    alt="T-Rex"
+                    class="u-img-inline"
+                    src="assets/images/theme/icon-trex.png"
+                  />
+                  = 4 x
+                  <img
+                    alt="Crocodile"
+                    class="u-img-inline"
+                    src="assets/images/theme/icon-croc.png"
+                  />
+                </li>
+                <li class="tabs__item">
+                  <img
+                    alt="T-Rex"
+                    class="u-img-inline"
+                    src="assets/images/theme/icon-trex.png"
+                  />
+                  = 100 x
+                  <img
+                    alt="Chihuahua"
+                    class="u-img-inline"
+                    src="assets/images/theme/icon-dog.png"
+                  />
+                </li>
+                <li class="tabs__item">
+                  <img
+                    alt="T-Rex"
+                    class="u-img-inline"
+                    src="assets/images/theme/icon-trex.png"
+                  />
+                  = 1 x
+                  <img
+                    alt="Car"
+                    class="u-img-inline"
+                    src="assets/images/theme/icon-car.png"
+                  />
+                  destroyed!
+                </li>
+              </ul>
+              <p class="tabs__text">
+                This allowed them to consume
+                <strong>high-energy bone marrow</strong> and instantly shatter
+                the defenses of armored prey.
+              </p>
+            </div>
             <div class="tabs__panel" role="tabpanel" hidden>Tab panel 2</div>
             <div class="tabs__panel" role="tabpanel" hidden>Tab panel 3</div>
+            <div class="tabs__panel" role="tabpanel" hidden>Tab panel 4</div>
+            <div class="tabs__panel" role="tabpanel" hidden>Tab panel 5</div>
           </div>
         </div>
       </section>
@@ -117,12 +208,5 @@
     <footer class="footer"></footer>
 
     <script type="module" src="js/main.js"></script>
-
-    <!-- Spline viewer-->
-    <script
-      type="module"
-      src="https://unpkg.com/@splinetool/viewer@1.12.97/build/spline-viewer.js"
-      async
-    ></script>
   </body>
 </html>

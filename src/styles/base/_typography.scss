@@ -5,3 +5,14 @@ body {
 
   color: var(--text-color);
 }
+
+p,
+ul,
+ol {
+  line-height: 1.5;
+  margin-bottom: space(20);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

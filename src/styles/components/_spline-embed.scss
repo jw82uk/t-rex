@@ -1,11 +1,12 @@
 @use '../abstracts/index' as *;
 
-.spline-wrapper,
-spline-viewer {
-  height: 600px;
+.spline-wrapper {
+  height: 350px;
 }
 
 spline-viewer {
+  // background-color: antiquewhite;
   cursor: grab;
-  pointer-events: none;
+  height: 100%;
+  width: 100%;
 }
