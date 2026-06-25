@@ -70,6 +70,9 @@ export function initTabs(containerSelector) {
   function switchTab(newTab) {
     const targetPanelId = newTab.getAttribute('aria-controls');
 
+    // Add the visited class to the newly selected tab
+    newTab.classList.add('is-visited');
+
     tabs.forEach((tab) => {
       const isSelected = tab === newTab;
       tab.setAttribute('aria-selected', isSelected ? 'true' : 'false');

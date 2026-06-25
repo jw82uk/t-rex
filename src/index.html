@@ -49,6 +49,7 @@
                 alt="Female detective emoji"
                 class="mission__image"
                 height="51"
+                loading="eager"
                 src="assets/images/theme/icon-detective.png"
                 width="45"
               />
@@ -57,13 +58,22 @@
               <h2 class="mission__heading">Your Mission</h2>
 
               <p class="mission__text">
-                Welcome! Your mission, if you choose to accept it, is to explore
-                <strong>Tina the T-Rex</strong> below to discover just what made
-                her such a formidable hunter.
+                Welcome! Your mission, if you choose to accept it, is to:
               </p>
-              <p class="mission__text">
-                Then, take the <a href="">super fun quiz (coming soon) </a>
-              </p>
+
+              <ol>
+                <li>
+                  Start by exploring <strong>Tina the T-Rex</strong> below to
+                  discover just what made her such a formidable hunter.
+                </li>
+                <li>
+                  Then, when you're ready, take the
+                  <a class="mission__link" href="#">super fun quiz </a> (coming
+                  soon!) to show us how brainy you are.
+                </li>
+              </ol>
+
+              <p class="mission__text">Good luck. You'll be great!</p>
             </div>
           </div>
         </div>
@@ -78,6 +88,7 @@
               src="https://unpkg.com/@splinetool/viewer@1.12.97/build/spline-viewer.js"
             ></script>
             <spline-viewer
+              id="dinoViewer"
               loading-anim-type="spinner-small-light"
               url="https://prod.spline.design/Qc3WXaa7im3Xs1qW/scene.splinecode"
             ></spline-viewer>
@@ -109,6 +120,14 @@
                 aria-selected="false"
                 tabindex="-1"
               >
+                Arms
+              </button>
+              <button
+                class="tabs__button"
+                role="tab"
+                aria-selected="false"
+                tabindex="-1"
+              >
                 Eyes and nose
               </button>
               <button
@@ -120,20 +139,13 @@
                 Legs
               </button>
               <button
-                class="tabs__button"
+                class="tabs__button cam-btn"
+                data-state="showTail"
                 role="tab"
                 aria-selected="false"
                 tabindex="-1"
               >
                 Tail
-              </button>
-              <button
-                class="tabs__button"
-                role="tab"
-                aria-selected="false"
-                tabindex="-1"
-              >
-                Arms
               </button>
             </div>
             <div class="tabs__panel" role="tabpanel">
@@ -142,23 +154,26 @@
                 While earlier predators sliced flesh, T. rex evolved to crush
                 entirely through bone, boasting an estimated
                 <strong>bite force of up to 12,800 pounds</strong> per square
-                inch. That's a lot of force, enough force to crush a car!
+                inch.
               </p>
               <p class="tabs__text">
-                Think of it this way. It's the equivalent of 4 of our biggest,
-                strongest living crocodiles, or over 100 angry Chihuahuas!
+                Think of it this way. It's the equivalent bite force of 4 of our
+                biggest, strongest living crocodiles, or over 15,000 angry
+                hamsters. Enough force to crush a car!
               </p>
-              <ul class="tabs__list">
+              <ul class="tabs__list u-list-plain">
                 <li class="tabs__item">
                   <img
                     alt="T-Rex"
                     class="u-img-inline"
+                    loading="lazy"
                     src="assets/images/theme/icon-trex.png"
                   />
                   = 4 x
                   <img
                     alt="Crocodile"
                     class="u-img-inline"
+                    loading="lazy"
                     src="assets/images/theme/icon-croc.png"
                   />
                 </li>
@@ -166,40 +181,141 @@
                   <img
                     alt="T-Rex"
                     class="u-img-inline"
+                    loading="lazy"
                     src="assets/images/theme/icon-trex.png"
                   />
-                  = 100 x
+                  = 15,000 x
                   <img
-                    alt="Chihuahua"
+                    alt="Hamster"
                     class="u-img-inline"
-                    src="assets/images/theme/icon-dog.png"
+                    loading="lazy"
+                    src="assets/images/theme/icon-hamster.png"
                   />
                 </li>
                 <li class="tabs__item">
                   <img
                     alt="T-Rex"
                     class="u-img-inline"
+                    loading="lazy"
                     src="assets/images/theme/icon-trex.png"
                   />
                   = 1 x
                   <img
                     alt="Car"
                     class="u-img-inline"
+                    loading="lazy"
                     src="assets/images/theme/icon-car.png"
                   />
                   destroyed!
                 </li>
               </ul>
               <p class="tabs__text">
-                This allowed them to consume
-                <strong>high-energy bone marrow</strong> and instantly shatter
-                the defenses of armored prey.
+                This allowed them to instantly shatter the defenses of armored
+                prey and
+                <strong>consume high-energy bone marrow</strong>.
               </p>
             </div>
-            <div class="tabs__panel" role="tabpanel" hidden>Tab panel 2</div>
-            <div class="tabs__panel" role="tabpanel" hidden>Tab panel 3</div>
-            <div class="tabs__panel" role="tabpanel" hidden>Tab panel 4</div>
-            <div class="tabs__panel" role="tabpanel" hidden>Tab panel 5</div>
+            <div class="tabs__panel" role="tabpanel" hidden>
+              <h3 class="tabs__heading">The Tiny But Mighty Arms</h3>
+              <p class="tabs__text">
+                People love to laugh at T. rex's tiny arms, but they were
+                ridiculously strong! While they were too short to reach its own
+                mouth, those arms were packed with thick muscles and tipped with
+                two sharp claws.
+              </p>
+              <p class="tabs__text">
+                A single T. rex arm could easily
+                <strong>bicep-curl over 400 pounds</strong>. That means its tiny
+                arm could lift an entire adult grizzly bear or 28 pumpkins!
+              </p>
+
+              <ul class="tabs__list u-list-plain">
+                <li class="tabs__item">
+                  <img
+                    alt="T-Rex"
+                    class="u-img-inline"
+                    loading="lazy"
+                    src="assets/images/theme/icon-trex.png"
+                  />
+                  = 1 x
+                  <img
+                    alt="Grizzly Bear"
+                    class="u-img-inline"
+                    loading="lazy"
+                    src="assets/images/theme/icon-croc.png"
+                  />
+                </li>
+                <li class="tabs__item">
+                  <img
+                    alt="T-Rex"
+                    class="u-img-inline"
+                    loading="lazy"
+                    src="assets/images/theme/icon-trex.png"
+                  />
+                  = 28 x
+                  <img
+                    alt="Pumpkin"
+                    class="u-img-inline"
+                    loading="lazy"
+                    src="assets/images/theme/icon-hamster.png"
+                  />
+                </li>
+              </ul>
+
+              <p class="tabs__text">
+                Scientists think that when a T. rex was wrestling with a large,
+                angry dinosaur up close, it used these short, incredibly strong
+                arms to
+                <strong>pin its prey tightly against its chest</strong> so it
+                couldn't wiggle away from those devastating jaws.
+              </p>
+            </div>
+            <div class="tabs__panel" role="tabpanel" hidden>
+              <h3 class="tabs__heading">The Super-Spy Sensory System</h3>
+              <p class="tabs__text">
+                A T. rex could see and smell you long before you ever knew it
+                was there. Unlike most predatory dinosaurs whose eyes faced
+                sideways, T. rex had eyes that pointed straight forward—just
+                like a hawk or a human. This gave it incredible "3D vision,"
+                allowing it to judge exactly how far away a running dinner was.
+              </p>
+              <p class="tabs__text">
+                To make things even scarier, the part of its brain responsible
+                for smell was absolutely massive. It could sniff out a meal from
+                miles away, making it impossible to hide from the king.
+              </p>
+            </div>
+            <div class="tabs__panel" role="tabpanel" hidden>
+              <h3 class="tabs__heading">The Power-Walking Engines</h3>
+              <p class="tabs__text">
+                Forget what you see in the movies—T. rex couldn't sprint fast
+                enough to chase down a sports car, but it didn't need to. Its
+                massive, muscular thighs were built for the ultimate game of
+                endurance. It could walk at a terrifyingly steady pace for hours
+                without getting tired, slowly wearing down its prey.
+              </p>
+              <p class="tabs__text">
+                Its feet were also equipped with huge "shock-absorber" pads that
+                cushioned its multi-ton weight, letting this giant move
+                surprisingly quietly through the Cretaceous forests.
+              </p>
+            </div>
+            <div class="tabs__panel" role="tabpanel" hidden>
+              <h3 class="tabs__heading">The Heavyweight Balance Beam</h3>
+              <p class="tabs__text">
+                When you have a giant head packed with heavy bone-crushing
+                teeth, you face a major problem: you’re going to tip over and
+                face-plant into the mud! That is where the tail came to the
+                rescue.
+              </p>
+              <p class="tabs__text">
+                The T. rex held its long, heavy, muscular tail completely
+                straight out behind it. It acted like a giant see-saw
+                counterweight, perfectly balancing its massive head. The tail
+                also packed huge muscles connected to its hips, acting like a
+                built-in steering rudder to help it pivot and turn quickly.
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 @use '../abstracts/index' as *;
 
 .tabs {
-  padding: space(40) 0;
+  padding: space(40) 0 space(80);
 }
 
 .tabs__tablist {
@@ -51,7 +51,7 @@
   // Selected tab
   &[aria-selected='true'] {
     background-color: var(--accent-primary);
-    border: none;
+    border-color: var(--accent-primary);
     color: var(--text-color-inverse);
 
     // Check icon
