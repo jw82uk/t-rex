@@ -2,6 +2,10 @@
 
 .spline-wrapper {
   height: 450px;
+  left: 50%;
+  margin-left: -50vw;
+  position: relative;
+  width: 100vw;
 }
 
 spline-viewer {

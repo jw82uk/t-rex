@@ -11,6 +11,14 @@
   gap: space(20);
   justify-content: center;
   margin-bottom: space(40);
+  overflow-x: scroll;
+  padding: space(6);
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling behaviour on mobile */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .tabs__button {
@@ -24,6 +32,7 @@
   gap: space(20);
   padding: space(12) space(20) space(12) space(24);
   text-transform: uppercase;
+  white-space: nowrap;
 
   // Check icon container
   &::after {
