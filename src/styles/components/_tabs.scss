@@ -1,23 +1,28 @@
 @use '../abstracts/index' as *;
 
 .tabs {
-  padding: space(40) 0 space(80);
+  padding: space(16) 0 space(48);
+
+  @include mq('sm') {
+    padding: space(40) 0 space(80);
+  }
 }
 
 .tabs__tablist {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  gap: space(20);
-  justify-content: center;
-  margin-bottom: space(40);
-  overflow-x: scroll;
+  flex-wrap: wrap;
+  gap: space(8);
+  margin-bottom: space(20);
   padding: space(6);
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling behaviour on mobile */
 
-  &::-webkit-scrollbar {
-    display: none;
+  @include mq('sm') {
+    gap: space(20);
+    margin-bottom: space(40);
+  }
+
+  @include mq('lg-tweak') {
+    justify-content: center;
   }
 }
 
@@ -27,12 +32,17 @@
   border: 1px solid var(--accent-secondary);
   border-radius: 2rem;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   gap: space(20);
-  padding: space(12) space(20) space(12) space(24);
+  padding: space(6) space(8) space(6) space(12);
   text-transform: uppercase;
   white-space: nowrap;
+
+  @include mq('sm') {
+    font-size: 1.2rem;
+    padding: space(12) space(20) space(12) space(24);
+  }
 
   // Check icon container
   &::after {

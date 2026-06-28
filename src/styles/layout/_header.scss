@@ -10,14 +10,9 @@
 }
 
 .header__heading {
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   line-height: 1.2;
   margin-bottom: space(16);
-
-  @include mq('sm') {
-    font-size: 3rem;
-    line-height: 1.2;
-  }
 }
 
 .header__subtitle {

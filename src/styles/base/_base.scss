@@ -19,7 +19,11 @@ a {
 
 ul,
 ol {
-  margin-left: space(48);
+  margin-left: space(24);
+
+  @include mq('sm') {
+    margin-left: space(48);
+  }
 }
 
 li {

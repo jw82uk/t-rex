@@ -18,6 +18,17 @@
 
 .mission__image {
   max-width: none;
+
+  &--wave {
+    display: inline-block;
+  }
+
+  &--detective {
+    @include mq('sm') {
+      height: auto;
+      width: 60px;
+    }
+  }
 }
 
 .mission__btn {
