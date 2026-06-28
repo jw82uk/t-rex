@@ -11,18 +11,28 @@
 .tabs__tablist {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: space(8);
   margin-bottom: space(20);
-  padding: space(6);
+  overflow-x: auto;
+
+  /* Smooth scrolling behaviour on mobile */
+  -webkit-overflow-scrolling: touch;
+
+  /* Hides the scrollbar on Windows/Linux for a cleaner look */
+  scrollbar-width: none;
 
   @include mq('sm') {
+    flex-wrap: wrap;
     gap: space(20);
+    justify-content: center;
     margin-bottom: space(40);
+    padding: space(6);
   }
 
-  @include mq('lg-tweak') {
-    justify-content: center;
+  /* Hides the scrollbar for Chrome, Safari, and Opera */
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -34,13 +44,14 @@
   display: flex;
   font-size: 1rem;
   font-weight: 700;
-  gap: space(20);
+  gap: space(16);
   padding: space(6) space(8) space(6) space(12);
   text-transform: uppercase;
   white-space: nowrap;
 
   @include mq('sm') {
     font-size: 1.2rem;
+    gap: space(20);
     padding: space(12) space(20) space(12) space(24);
   }
 

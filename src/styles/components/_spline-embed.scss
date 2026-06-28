@@ -1,15 +1,12 @@
 @use '../abstracts/index' as *;
 
 .spline-wrapper {
+  @extend %breakout;
+
   height: 450px;
-  left: 50%;
-  margin-left: -50vw;
-  position: relative;
-  width: 100vw;
 }
 
 spline-viewer {
-  // background-color: antiquewhite;
   cursor: grab;
   height: 100%;
   width: 100%;
