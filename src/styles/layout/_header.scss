@@ -1,8 +1,13 @@
 @use '../abstracts/index' as *;
 
 .header {
-  padding-bottom: space(48);
-  padding-top: space(48);
+  padding-bottom: space(32);
+  padding-top: space(32);
+
+  @include mq('sm') {
+    padding-bottom: space(48);
+    padding-top: space(48);
+  }
 }
 
 .header__group {

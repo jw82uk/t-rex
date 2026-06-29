@@ -1,20 +1,47 @@
 @use '../abstracts/index' as *;
 
 .tabs {
-  padding: space(16) 0 space(48);
+  padding: space(32) 0 space(48);
 
   @include mq('sm') {
     padding: space(40) 0 space(80);
   }
 }
 
+.tabs__container {
+  @include breakout;
+
+  position: relative;
+
+  @include mq('sm') {
+    @include breakout-unset;
+  }
+
+  &::after {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    content: '';
+    display: block;
+    inset: 0 0 0 auto;
+    pointer-events: none;
+    position: absolute;
+    width: 25px;
+  }
+}
+
 .tabs__tablist {
+  @include breakout;
+
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: space(8);
-  margin-bottom: space(20);
+  margin-bottom: space(28);
   overflow-x: auto;
+  padding: 0 25px;
 
   /* Smooth scrolling behaviour on mobile */
   -webkit-overflow-scrolling: touch;
@@ -23,6 +50,8 @@
   scrollbar-width: none;
 
   @include mq('sm') {
+    @include breakout-unset;
+
     flex-wrap: wrap;
     gap: space(20);
     justify-content: center;
@@ -100,5 +129,6 @@
 
 .tabs__heading {
   font-size: 2rem;
+  line-height: 1.2;
   margin-bottom: space(20);
 }

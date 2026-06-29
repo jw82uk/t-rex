@@ -1,7 +1,7 @@
 @use '../abstracts/index' as *;
 
 .spline-wrapper {
-  @extend %breakout;
+  @include breakout;
 
   height: 450px;
 }
