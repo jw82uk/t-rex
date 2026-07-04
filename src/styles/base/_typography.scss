@@ -4,6 +4,7 @@ body {
   @include text-scale(3);
 
   color: var(--text-color);
+  font-size: 1rem;
 }
 
 p,
@@ -14,5 +15,25 @@ ol {
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+p {
+  font-size: 1rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: space(4);
+
+  li {
+    display: flex;
+    flex-direction: row;
+    gap: space(8);
+  }
+
+  img {
+    display: block;
   }
 }
