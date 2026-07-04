@@ -31,8 +31,8 @@ Before you begin, ensure you have the following installed:
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/jw82uk/human-evolution.git](https://github.com/jw82uk/human-evolution.git)
-    cd human-evolution
+    git clone [https://github.com/jw82uk/t-rex.git](https://github.com/jw82uk/t-rex.git)
+    cd t-rex
     ```
 
 2.  **Install dependencies:**
