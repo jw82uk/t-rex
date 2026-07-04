@@ -1,10 +1,10 @@
 @use '../abstracts/index' as *;
 
 .tabs {
-  padding: space(32) 0 space(48);
+  padding: space(32) 0 space(96);
 
   @include mq('sm') {
-    padding: space(40) 0 space(96);
+    padding-top: space(40);
   }
 }
 
