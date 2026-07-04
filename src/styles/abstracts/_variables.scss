@@ -16,7 +16,10 @@ $clr-pale-grey: #f5f5f5;
 $clr-mid-grey: #d9d9d9;
 $clr-eerie-black: #1b1b1b;
 $clr-white: #fff;
-$clr-barcelona-orange: #ff9500;
+$clr-orange-pepper: #ff6200;
+$crustose-lichen: #c24a00;
+
+//#ff6200
 
 // Remove
 $clr-deep-navy: #0e1127;
@@ -26,8 +29,9 @@ $clr-magenta: #f3e;
 // The theme tokens (these create the CSS custom variables)
 $theme-tokens: (
   bg-color: $clr-pale-grey,
-  accent-primary: $clr-barcelona-orange,
+  accent-primary: $clr-orange-pepper,
   accent-secondary: $clr-mid-grey,
+  accent-tertiary: $crustose-lichen,
   text-color: $clr-eerie-black,
   text-color-inverse: $clr-white,
 );

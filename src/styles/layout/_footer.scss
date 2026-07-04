@@ -1,5 +1,16 @@
 @use '../abstracts/index' as *;
 
 .footer {
-  min-height: space(96);
+  background-color: rgba(black, 0.05);
+  padding: space(32) 0;
+  text-align: center;
+
+  .footer__text {
+    font-size: 0.9rem;
+  }
+
+  a {
+    color: var(--text-color);
+    font-weight: 400;
+  }
 }
