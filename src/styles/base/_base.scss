@@ -40,7 +40,14 @@ li {
   margin: 10px 0 0 0;
   padding: space(4) space(4) space(4) space(20);
 
+  // When the animation is stopped
   &.is-stopped {
     background-image: url(../assets/images/theme/icon-play.svg);
+  }
+
+  // Hide button until Spline model has loaded
+  body:not(.spline-loaded) & {
+    opacity: 0;
+    visibility: hidden;
   }
 }
