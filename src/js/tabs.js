@@ -1,5 +1,5 @@
-// tabs.js (Enhanced version)
-let instanceCounter = 0; // Tracks how many tab components are on the page
+// tabs.js (Enhanced version with Progressive Enhancement & 'is-visited')
+let instanceCounter = 0;
 
 export function initTabs(containerSelector) {
   const container = document.querySelector(containerSelector);
@@ -10,18 +10,28 @@ export function initTabs(containerSelector) {
   const tabs = tabList.querySelectorAll('[role="tab"]');
   const panels = container.querySelectorAll('[role="tabpanel"]');
 
-  // Dynamically inject unique IDs and ARIA attributes
+  // Dynamically inject unique IDs, ARIA attributes, AND handle initial visibility
   tabs.forEach((tab, index) => {
     const uniqueId = `tabs-${instanceCounter}-tab-${index}`;
     const uniquePanelId = `tabs-${instanceCounter}-panel-${index}`;
+    const isSelected = tab.getAttribute('aria-selected') === 'true';
 
     tab.setAttribute('id', uniqueId);
     tab.setAttribute('aria-controls', uniquePanelId);
 
-    // Ensure the corresponding panel exists before setting attributes
     if (panels[index]) {
       panels[index].setAttribute('id', uniquePanelId);
       panels[index].setAttribute('aria-labelledby', uniqueId);
+
+      // PROGRESSIVE ENHANCEMENT: Hide the panel programmatically
+      // if its corresponding tab is not the initially selected one.
+      if (!isSelected) {
+        panels[index].setAttribute('hidden', '');
+      }
+    }
+
+    if (isSelected) {
+      tab.classList.add('is-visited');
     }
   });
 
@@ -69,8 +79,6 @@ export function initTabs(containerSelector) {
 
   function switchTab(newTab) {
     const targetPanelId = newTab.getAttribute('aria-controls');
-
-    // Add the visited class to the newly selected tab
     newTab.classList.add('is-visited');
 
     tabs.forEach((tab) => {
