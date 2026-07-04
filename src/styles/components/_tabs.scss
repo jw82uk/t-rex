@@ -133,3 +133,19 @@
   line-height: 1.2;
   margin-bottom: space(20);
 }
+
+// Display tabs if JS doesn't load
+.no-js {
+  .tabs__tablist {
+    display: none;
+  }
+
+  .tabs__panel {
+    display: block;
+    margin-bottom: space(64);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
