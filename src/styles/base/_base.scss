@@ -32,8 +32,15 @@ li {
 
 .button--toggle-animation {
   background-color: transparent;
+  background-image: url(../assets/images/theme/icon-stop.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
   border: 0;
-  color: var(--text-color);
+  color: rgba(black, 0.6);
   margin: 10px 0 0 0;
-  padding: 10px;
+  padding: space(4) space(4) space(4) space(20);
+
+  &.is-stopped {
+    background-image: url(../assets/images/theme/icon-play.svg);
+  }
 }
