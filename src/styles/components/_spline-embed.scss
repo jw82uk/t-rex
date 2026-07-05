@@ -8,9 +8,9 @@
 
   //T. rex fallback image (hidden by default)
   &:before {
-    background-image: url(../assets/images/theme/trex-fallback-2.webp);
+    background-image: url(../assets/images/theme/trex-fallback-3.webp);
     background-repeat: no-repeat;
-    background-position: bottom 18px left 50%;
+    background-position: bottom 18px left calc(50% + 7px);
     content: '';
     display: block;
     inset: 0 0 0 0;
