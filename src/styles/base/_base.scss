@@ -38,7 +38,9 @@ li {
   border: 0;
   color: rgba(black, 0.6);
   margin: 10px 0 0 0;
+  position: absolute;
   padding: space(4) space(4) space(4) space(20);
+  z-index: 1;
 
   // When the animation is stopped
   &.is-stopped {
