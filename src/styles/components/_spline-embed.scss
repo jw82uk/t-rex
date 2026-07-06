@@ -6,6 +6,14 @@
   height: 450px;
   position: relative;
 
+  @include mq('md-plus') {
+    background-image: url(../assets/images/theme/human.webp);
+    background-position: bottom 20px left calc(50% - 275px);
+    background-repeat: no-repeat;
+    background-size: 110px auto;
+    transform: translateX(50px);
+  }
+
   //T. rex fallback image (hidden by default)
   &:before {
     background-image: url(../assets/images/theme/trex-fallback-3.webp);
@@ -17,6 +25,10 @@
     opacity: 0;
     position: absolute;
     transition: all ease 1s;
+
+    @include mq('md-plus') {
+      background-position: bottom 18px left calc(50% - 18px);
+    }
   }
 
   //T. rex fallback image (make visible)
@@ -33,6 +45,10 @@ spline-viewer {
   height: 100%;
   opacity: 1;
   width: 100%;
+
+  @include mq('md-plus') {
+    width: calc(100% - 50px);
+  }
 
   // Hide spline viewer
   .animation-stopped & {
