@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTabs('.tabs');
 
   //
-  // Toggle animation button
+  // Animation stop/play button
   //
   const toggleBtn = document.getElementById('animation-toggle');
 
@@ -33,12 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   //
-  // Spline loaded
+  // Add class to <body> when model has loaded
   //
-
-  // Initialize the listener
   initSplineListener('dino-model', () => {
     document.body.classList.add('spline-loaded');
-    console.log('Spline module successfully notified main.js!');
   });
 });
