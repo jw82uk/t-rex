@@ -21,8 +21,8 @@
   &::after {
     background: linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 1) 90%
+      rgb(255 255 255 / 0%) 0%,
+      rgb(255 255 255 / 100%) 90%
     );
     content: '';
     display: block;
@@ -37,15 +37,14 @@
   @include breakout;
 
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
   gap: space(8);
   margin-bottom: space(28);
-  overflow-x: auto;
-  padding: 0 35px 0 25px;
 
   /* Smooth scrolling behaviour on mobile */
   -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  padding: 0 35px 0 25px;
 
   /* Hides the scrollbar on Windows/Linux for a cleaner look */
   scrollbar-width: none;

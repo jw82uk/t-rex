@@ -12,11 +12,11 @@
 
 // Tabs
 .section--tabs {
-  &:before {
+  &::before {
     background-color: $clr-white;
     content: '';
     display: block;
-    inset: space(n40) 0 0 0;
+    inset: space(n40) 0 0;
     position: absolute;
   }
 }

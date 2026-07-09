@@ -35,19 +35,19 @@ li {
 
 .button--toggle-animation {
   background-color: transparent;
-  background-image: url(../assets/images/theme/icon-stop.svg);
+  background-image: url("../assets/images/theme/icon-stop.svg");
   background-position: left center;
   background-repeat: no-repeat;
   border: 0;
-  color: rgba(black, 0.7);
-  position: absolute;
+  color: rgb(black, 0.7);
   padding: space(4) space(4) space(4) space(20);
+  position: absolute;
   top: space(20);
   z-index: 1;
 
   // When the animation is stopped
   &.is-stopped {
-    background-image: url(../assets/images/theme/icon-play.svg);
+    background-image: url("../assets/images/theme/icon-play.svg");
   }
 
   // Hide button until Spline model has loaded
