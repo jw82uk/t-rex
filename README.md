@@ -1,8 +1,6 @@
 # Anatomy of a T-Rex
 
-This is an interactive, educational...
-
-- **Something:** Something something...
+**Anatomy of a T. rex** is a proof-of-concept for an interactive eLearning application designed for learners aged 10 and above. While this prototype focuses on the Tyrannosaurus rex, the concept could easily be applied to other subject areas.
 
 🔗 **[View Live Demo](https://jw82uk.github.io/t-rex/)**
 
